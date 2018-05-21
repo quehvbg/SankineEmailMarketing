@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TabPane?>
+<?import org.controlsfx.glyphfont.*?>
+<?import javafx.scene.control.Tab?>
+
+<Tab text="%key43" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="sankine.plugin.customer.controllers.SK_PluginCustomerEditController">
+	<AnchorPane prefHeight="710.0" prefWidth="1024.0">
+		<children>
+			<AnchorPane AnchorPane.leftAnchor="20.0"
+				AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0"
+				AnchorPane.bottomAnchor="20.0" prefWidth="984.0" prefHeight="670.0">
+				<TitledPane prefHeight="200.0" styleClass="info" text="%key79"
+					AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+					<AnchorPane prefWidth="984.0">
+						<children>
+							<StackPane AnchorPane.leftAnchor="20.0"
+								AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+								<children>
+									<GridPane prefWidth="944.0" hgap="10" vgap="10">
+										<columnConstraints>
+											<ColumnConstraints hgrow="SOMETIMES"
+												minWidth="10.0" percentWidth="25.0" prefWidth="100.0"/>
+											<ColumnConstraints hgrow="SOMETIMES"
+												minWidth="10.0" percentWidth="25.0" prefWidth="100.0"/>
+											<ColumnConstraints hgrow="SOMETIMES"
+												minWidth="10.0" percentWidth="25.0" prefWidth="100.0"/>
+											<ColumnConstraints hgrow="SOMETIMES"
+												minWidth="10.0" percentWidth="25.0" prefWidth="100.0"/>
+										</columnConstraints>
+										<rowConstraints>
+											<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+											<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+											<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+										</rowConstraints>
+										<TextField promptText="%key95" fx:id="txtFirstName" 
+											GridPane.columnIndex="0" GridPane.rowIndex="0">
+										</TextField>
+										<TextField promptText="%key96" GridPane.columnIndex="1" fx:id="txtLastName"
+											GridPane.rowIndex="0">
+										</TextField>
+										<TextField promptText="%key84" fx:id="txtDisplay"
+											GridPane.columnIndex="2" GridPane.rowIndex="0">
+										</TextField>																				
+										<TextField promptText="%key135" GridPane.columnSpan="2"  fx:id="txtEmail" 
+											GridPane.columnIndex="0" GridPane.rowIndex="1">
+										</TextField>
+										<TextField promptText="%key75" fx:id="txtPhone" 
+											GridPane.columnIndex="3" GridPane.rowIndex="0">
+										</TextField>
+										<TextField promptText="%key100"  fx:id="txtProvince" 
+											GridPane.columnIndex="3" GridPane.rowIndex="1">
+										</TextField>
+										<AnchorPane GridPane.columnIndex="2" GridPane.rowIndex="1">
+											<children>
+												<ComboBox fx:id="customerGroup" styleClass="success" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+											</children>
+										</AnchorPane>
+										<CheckBox mnemonicParsing="false" selected="true" text="%key201" GridPane.columnIndex="0" fx:id="cbIsActive"
+											GridPane.rowIndex="2"/>																																											
+									</GridPane>
+								</children>
+							</StackPane>
+						</children>
+					</AnchorPane>
+				</TitledPane>
+				<StackPane prefHeight="32.0" layoutY="200"
+					AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+					<children>
+						<AnchorPane prefWidth="984.0">
+							<children>
+								<HBox spacing="15.0" AnchorPane.leftAnchor="0.0"
+									AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+									<children>
+										<Button text="%key16" styleClass="default" onAction="#resetForm" >
+											<graphic>
+	   									        <Glyph fontFamily="FontAwesome" icon="REFRESH" />										       
+   									    	</graphic>
+										</Button>
+										<Button text="%key76" styleClass="success" onAction="#saveChange">
+											<graphic>
+	   									        <Glyph fontFamily="FontAwesome" icon="SAVE" />										       
+   									    	</graphic>   									    
+										</Button>									
+									</children>
+								</HBox>
+							</children>
+						</AnchorPane>
+					</children>
+				</StackPane>				
+			</AnchorPane>
+		</children>
+	</AnchorPane>
+</Tab>
